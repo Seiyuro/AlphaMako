@@ -1,0 +1,19 @@
+﻿/*
+	Julian Serrano	
+*/
+
+/* TEAM */
+ 	Creator: Julian Serrano.
+	Contact: jsr.isc [at] gmail.com
+	From: Tampico, Tamaulipas.
+	
+
+/* Thanks*/
+	www.bextlan.com	
+
+/*SITE*/
+	Last Update: 2012/10/01
+	Language: Español
+	Standars: HTML5, CSS3, JavaScript
+	Components: Jquery
+	Software: Notepad++, Photoshop, SublimeText2.

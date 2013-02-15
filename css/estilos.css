@@ -1,0 +1,331 @@
+*{
+	border: 0;
+	border-radius: .5em;
+	margin: 0;
+	padding: .8em 0 .8em 0 ;
+}
+
+article, figcaption, figure, footer, header, hgroup, nav,section{
+	display: block;
+}
+
+@font-face{
+	font-family: "Chalet";
+	src: url("../font/Chalet.eot");
+	src: url("../font/Chalet.eot#iefix") format("embedded-opentype"),
+			url("../fonts/Chalet.woff") format("woff"),
+			url("../fonts/Chalet.tff") format("truetype"),
+			url("../fonts/Chalet.svg#Chalet") format("svg");
+		font-style: normal;
+		font-weight: normal;
+}
+
+@font-face{
+	font-family: "Pecita";
+	src: url("../font/Pecita.eot");
+	src: url("../font/Pecita.eot#iefix") format("embedded-opentype"),
+			url("../fonts/Pecita.woff") format("woff"),
+			url("../fonts/Pecita.tff") format("truetype"),
+			url("../fonts/Pecita.svg#Pecita") format("svg");
+		font-style: normal;
+		font-weight: normal;
+}
+
+body{
+	background: #212121 url("../img/fondo.jpg");
+	color: #E6E6E6;
+	font-family: Helvetica, verdana;
+	font-size: 1em;
+}
+
+a{
+	color: #57ABB8;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover{
+	color: #57ABB8;
+}
+
+figcaption{
+	font-size: .85em;
+	padding: 0.25em;
+	text-align: center;
+}
+
+header{
+	padding: 0;
+	margin: 0;
+	font: 2em;
+}
+
+h2{
+	color: black;
+	font-family: "Chalet", Helvetica, verdana;
+}
+
+h4{
+	color: black;
+	font-family: "Chalet", Helvetica, verdana;
+
+}
+
+hr{
+	border: 1px dashed navy;
+	margin:  1em 0; 
+}
+img, video{
+	max-width: 100%;
+
+}
+
+header,section#contenido, footer{
+	background: #F2F2F2  url(..img/fondo-interno.jpg);
+	margin: 0 auto;
+	max-width: 90%;
+	text-align: center;
+
+}
+
+
+
+header h1, nav{
+	display: inline-block;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+
+nav ul{
+	list-style: none;
+}
+
+nav li{
+	display: inline-block;
+	padding: 0.1em;
+	vertical-align: top;
+}
+
+nav a{
+	 background: black;
+	 border: 0.1em solid #212121;
+	 border-radius: 0.25em;
+	 color: white;
+	 display: block;
+	 font-family: "Pecita", Helvetica, verdana;
+	 font-size: 1.1em;
+	 padding: 0.2em;
+	 -ms-transition: all 2s ease-in;
+ 	 -moz-transition: all 2s ease-in;
+	 -o-transition: all 2s ease-in;
+	 -webkit-transition: all 2s ease-in;
+ 	 transition: all 2s ease-in;
+
+
+}
+
+nav a:hover{
+	 background: white;
+	 border: 0.1em solid #212121;
+	 border-radius: 0 0.5em 0 0.5em;
+	 color: #57ABB8;
+	 -ms-transition: all 1s ease-out;
+ 	 -moz-transition: all 1s ease-out;
+	 -o-transition: all 1s ease-out;
+	 -webkit-transition: all 1s ease-out;
+ 	 transition: all 1s ease-out;
+
+}
+
+section#principal, aside{
+	background: #1E6381;
+	border-radius: 0.5em;
+	display: inline-block;
+	height: auto;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 0.25em;
+	vertical-align: top;
+	width: 65%;
+}
+
+article#galeria {
+	border-radius: 0.5em;
+	margin: 0.5em;
+	padding: 0.5em;
+	text-align: left;
+	width: 95%;
+}
+
+aside{
+	width: 30%;
+}
+
+aside img{
+	border-radius: 0.8em;
+}
+
+article#about-descripcion, article#about-multimedia{
+	background: #1E6381;
+	border-radius: 0.5em;
+	display: inline-block;
+	margin: 1px auto;
+	max-width: 100%;
+	min-height: 543px;
+	padding: 0.5em;
+	text-align: justify;
+	vertical-align: top;
+	width: 55%;
+
+}
+
+ul#exp{
+	padding-left: 1.5em;
+}
+
+article#about-multimedia{
+	text-align: center;
+	width:  30%;
+	padding:  0.5em
+}
+footer{
+	color: #000;
+	font-size: 0.85em;
+	padding: 0.75em 0;
+
+
+}
+
+.fade{
+ 	 opacity: 1;
+ 	 filter:alpha(opacity=10);
+	 -ms-transition: all 1s ease-in;
+ 	 -moz-transition: all 1s ease-in;
+	 -o-transition: all 1s ease-in;
+	 -webkit-transition: all 1s ease-in;
+ 	 transition: all 1s ease-in;
+}
+
+.fade:hover{
+ 	 opacity: 0.6;
+ 	 filter:alpha(opacity=6);
+	 -ms-transition: all 1s ease-out;
+ 	 -moz-transition: all 1s ease-out;
+	 -o-transition: all 1s ease-out;
+	 -webkit-transition: all 1s ease-out;
+ 	 transition: all 1s ease-out;
+}
+
+@media(min-width: 1081px){
+	header h1{
+		text-align: right;
+		width: 35%;
+		vertical-align: top;
+	}
+	nav {
+		text-align: center;
+		width: 60%;
+		vertical-align: bottom;
+	}
+}
+
+@media(max-height: 1080px){
+	nav li{
+		font-size: 1.4em;
+	}
+	article#galeria{
+		width: 90%;
+	}
+	aside{
+		width: 20%;
+	}
+	article#about-descripcion, article#about-multimedia{
+		width: 45%;
+	}
+}
+
+@media(max-width: 800px){
+	nav li{
+		font-size: 0.95em;
+	}
+	article#galeria{
+		width: 88%;
+	}
+
+}
+
+@media(max-width: 600px){
+	nav li{
+		display: inline-block;
+		margin: 0px;
+		width: 98%;
+	}
+	section#principal, aside, article#about-multimedia, article#about-descripcion  {
+		display: block;
+		width: 95%;
+	}
+	section#principal, article#about-multimedia {
+		margin-bottom: 0.2em;
+	}
+	canvas#cvs {
+		width: 95%;
+
+	}
+
+}
+
+@media(max-width: 1000px){
+	nav li{
+		display: inline-block;
+		margin: 0px;
+		width: 98%;
+	}
+	section#principal, aside, article#about-multimedia, article#about-descripcion  {
+		display: block;
+		width: 95%;
+	}
+	section#principal, article#about-multimedia {
+		margin-bottom: 0.2em;
+	}
+	canvas#cvs {
+		display: block;
+		width: 85%;
+
+	}
+
+}
+
+
+
+
+
+pre.code {
+    display: block;
+    border-radius: 15px;
+    border: 1px dashed #aaa;
+    padding: 5px;
+    background-color: #eee;
+}
+
+
+#mako_logo{
+	margin: 0 auto;
+	padding: 0;
+	text-align: left;
+	width: 200px;
+}
+
+
+#logo{
+	display: inline-block;
+	color: #0B2161;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#caption{
+	font-size: 1.5em;
+	padding: 0em;
+	text-align: center;
+
+}

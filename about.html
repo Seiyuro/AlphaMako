@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>About me...</title>
+	<meta charset="utf-8"/>
+	<meta name="description" content="About me..."/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="shortcut icon" type="image/x-icon" href="saoico.ico"/>
+	<link rel="author" type="text/plain" href="humans.txt"/>
+	<link rel="stylesheet" href="css/estilos.css" type="text/css">
+	<link rel="sitemap" type="application/xml" title="Sitemap"href="sitemap.xml">
+	<link rel="stylesheet" href="demos.css" type="text/css" media="screen" />
+    
+    <script src="plugins/libraries/RGraph.common.core.js" ></script>
+    <script src="plugins/libraries/RGraph.common.dynamic.js" ></script>
+    <script src="plugins/libraries/RGraph.common.tooltips.js" ></script>
+    <script src="plugins/libraries/RGraph.common.effects.js" ></script>
+    <script src="plugins/libraries/RGraph.radar.js" ></script>
+    <!--[if lt IE 9]><script src="../excanvas/excanvas.js"></script><![endif]-->
+
+	<!--[if lt IE9]>
+		<script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+	<header>
+		<figure id="logo">
+			<img class="fade" id="mako_logo" alt="Mako Reactor 7" src="img/mkr7-logo.jpg">
+				<figcaption id="caption">
+					Mako Reactor 7 
+				</figcaption>
+			</figure>
+
+		<nav> 
+			<ul>
+				<li><a href="index.html">Inicio</a> </li>
+				<li><a href="off_line.html">Off-Line</a> </li>
+				<li><a href="on_line.html">On-Line</a> </li>
+				<li><a href="about.html">About</a> </li>
+				<li><a href="trabajos.html">Trabajos</a> </li>
+				<li><a href="contacto.html">Contacto</a> </li>
+			</ul>
+		</nav>
+	</header>
+<body>
+	</br>
+	<section id="contenido">
+		<article id="about-descripcion">
+			<b>Acerca de mi:</b> 	
+					<h4>I.S.C. Juli&aacute;n Serrano Rdz. </h4></br>
+					<p> <b> Estudios: </b> </br> 
+							Instituto de Estudios Superiores de Tamaulipas (IEST). </br></br>
+						<b> Carrera: </b> </br>
+							Ingenier&iacute;a en Sistemas Computacionales.</br> </br>
+						<b> Experiencia: </b> </br>
+							<ul id="exp"><li>6 meses con Freelance.</li> <li>1 año 6 meses como desarrollador PHP en Gameloft. </li></ul>
+						 </br>
+					</p>
+					<hr />
+			<b>About me: </b>	
+				<p>
+					<h4>I.S.C. Juli&aacute;n Serrano Rdz. </h4></br>
+					<p> <b> School Education: </b> </br> 
+							Instituto de Estudios Superiores de Tamaulipas (IEST). </br></br>
+						<b> Career: </b> </br>
+							Computer Systems Engineering.</br> </br>
+						<b> Experience: </b> </br>
+							<ul id="exp"><li>6 month like a Freelance.</li> <li>1 year and a half like a web developer in PHP (Gameloft). </li></ul>
+						 </br>
+					</p>
+					
+				</p>
+
+		</article>
+		<article id="about-multimedia">
+			<!--figure id="img-about">
+				<img src="img/about.jpg" alt="about"/>
+				<figcaption> He visto el futuro y est&aacute; aqui....</figcaption>
+			</figure-->
+			<section id="skillGraphic">  
+				<h2>WEB PROGRAMING SKILLS: </h2>
+				<canvas id="cvs" width="450" height="450">[No canvas support]</canvas>  
+				    <script>
+				        window.onload = function ()
+				        {
+				            var radar2 = new RGraph.Radar('cvs', [8,9,7,6,5,5]);
+				            radar2.Set('chart.labels', ['PHP', 'JS', 'MySQL','HTML5','CSS3', 'PhotoShop']);
+				            radar2.Set('chart.tooltips', ['PHP', 'JS', 'MySQL','HTML5','CSS3', 'PhotoShop','PHP', 'JS', 'MySQL','HTML5','CSS3','PhotoShop']);
+				            radar2.Set('chart.background.circles.poly', true);
+				            radar2.Set('chart.background.circles.spacing', 30);
+				            radar2.Set('chart.colors', ['rgba(0,0,0,0.8)','rgba(255,255,0,0.25)']);
+				            radar2.Set('chart.axes.color', 'transparent');
+				            radar2.Set('chart.highlights', true);
+				            radar2.Set('chart.strokestyle', ['red','black']);
+				            RGraph.Effects.Radar.Grow(radar2);
+				        }
+				    </script>
+			</section>
+		
+			<!--section>
+				<video id="video-about" controls preload>
+					<source src="video/video-prueba.mp4" type="video/mp4"/> 
+					<source src="video/video-prueba.webm" type="video/webm"/> 
+					<source src="video/video-prueba.ogv" type="video/ogg"/> 
+				</video>
+			</section-->
+		</article>
+	</section>
+	</br>
+	<footer>
+		P&aacute;gina de Proyectos Julian Serrano (<a href="http://twitter.com/seiyuro" rel="author" target="_blank"> @Seiyuro</a> )
+	</footer>
+</body>
+</html>
